@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#02040a" />
+    </linearGradient>
+    <linearGradient id="glowGame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGame)" />
+
+  <!-- Pixel Grid Dungeon Floor -->
+  <g stroke="#1e293b" stroke-width="1" stroke-opacity="0.4">
+    <path d="M0,50 H800 M0,100 H800 M0,150 H800 M0,200 H800 M0,250 H800 M0,300 H800 M0,350 H800 M0,400 H800" />
+    <path d="M50,0 V450 M100,0 V450 M150,0 V450 M200,0 V450 M250,0 V450 M300,0 V450 M350,0 V450 M400,0 V450 M450,0 V450 M500,0 V450 M550,0 V450 M600,0 V450 M650,0 V450 M700,0 V450 M750,0 V450" />
+  </g>
+
+  <!-- Player Character Center -->
+  <circle cx="400" cy="225" r="45" fill="#10b981" fill-opacity="0.15" />
+  <circle cx="400" cy="225" r="22" fill="#34d399" />
+  <!-- Combat Slash Arc -->
+  <path d="M 360 170 A 65 65 0 0 1 470 230" fill="none" stroke="#6ee7b7" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Enemy 1 (FSM AI State: Chasing) -->
+  <circle cx="270" cy="160" r="16" fill="#ef4444" />
+  <text x="270" y="135" fill="#f87171" font-size="10" font-family="monospace" text-anchor="middle">FSM: ATTACK</text>
+  
+  <!-- Enemy 2 (FSM AI State: Patrol) -->
+  <circle cx="530" cy="290" r="16" fill="#f59e0b" />
+  <text x="530" y="325" fill="#fbbf24" font-size="10" font-family="monospace" text-anchor="middle">FSM: FLANK</text>
+
+  <!-- Enemy 3 -->
+  <circle cx="560" cy="140" r="16" fill="#ef4444" />
+
+  <!-- UI HUD Overlay -->
+  <rect x="30" y="30" width="220" height="40" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="45" y="55" fill="#34d399" font-size="12" font-family="monospace" font-weight="bold">UNITY 2D // ROGUELITE</text>
+  
+  <!-- Wave Spawner Status -->
+  <rect x="570" y="30" width="200" height="40" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="670" y="55" fill="#38bdf8" font-size="12" font-family="monospace" text-anchor="middle">WAVE 12 • 60 FPS</text>
+</svg>
